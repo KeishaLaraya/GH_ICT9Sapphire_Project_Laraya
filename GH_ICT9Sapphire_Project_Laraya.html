@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title> Unit Conversion </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      height: 100vh;
+      background-color: #ced3dc;
+    }
+    .square {
+      background-color: #aba9c3;
+      width: 800px;
+      height: 500px;
+      border-radius: 15px;
+    }  
+
+    p {
+        font-size: 20px;
+    }
+
+    h1 {
+        color: #FCF7F8;
+        font-family:Elephant;
+    }
+
+    h3 {
+        color: #5b616a;
+        font-family: Stencil;
+    }
+
+    button {
+        font-family: Constantia;
+    }
+    </style>
+</head>
+<body>
+<body class="container">
+    <br>
+    <br>
+    <div class="square">
+    <center>
+    <br><br>
+    <h1>Unit Converter</h1>
+    <h3>Millimeter Convertion Unit</h3><br>
+    </center>
+    <center class="container">
+        <br>
+        <input type="text" id="id1" class="form-control-lg" placeholder="Enter Millimeter/s"> 
+        <br><br>
+        <h2><p style="color: black">=</p></h2>
+        <p id="id2"></p>
+        <br>
+    <div>
+        <br>
+        <button type="button" onclick="Centimeters()" class="btn btn-outline-primary btn-lg">Convert to Centimeters</button>
+        <button type="button" onclick="Meters()" class="btn btn-outline-primary btn-lg">Convert to Meters</button>
+        <button type="button" onclick="Kilometers()" class="btn btn-outline-primary btn-lg">Convert to Kilometers</button>
+    </div>
+    </div>
+        <br>
+        <script>
+            function Centimeters() {
+                    var var1 = document.getElementById('id1').value;
+                    var answer1 = var1 / 10
+                    document.getElementById('id2').innerHTML = answer1 + " centimeter/s";
+                }
+        </script>
+        <script>
+            function Meters() {
+                    var var2 = document.getElementById('id1').value;
+                    var answer2 = var2 / 1000
+                    document.getElementById('id2').innerHTML = answer2 + " meter/s";
+                }
+        </script>
+        <script>
+            function Kilometers() {
+                    var var3 = document.getElementById('id1').value;
+                    var answer3 = var3 / 1000000
+                    document.getElementById('id2').innerHTML = answer3 + " kilometer/s";
+                }
+        </script>
+    </center>
+</body>
+</html>
+</body>
+</html>
